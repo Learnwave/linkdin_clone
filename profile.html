@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn-Clone Project</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+</head>
+<body> 
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"> <img src="./assets/images/logo.png" alt="image not found"> </a>
+
+            <div class="search-box">
+                <img src="./assets/images/search.png" alt="no image">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center"> 
+            <ul>
+                <li><a href="./index.html" class="active-link"><img src="./assets/images/home.png" alt="no image"> <span>Home</span></a></li>
+                <li><a href="#"><img src="./assets/images/network.png" alt="no image"> <span>My Network</span></a></li>
+                <li><a href="#"><img src="./assets/images/jobs.png" alt="no image"> <span>Jobs</span></a></li>
+                <li><a href="#"><img src="./assets/images/message.png" alt="no image"> <span>Messaging</span></a></li>
+                <li><a href="#"><img src="./assets/images/notification.png" alt="no image"> <span>Notification</span></a></li>
+
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="./assets/images/myphoto.png" alt="no image" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+
+        <!-- ------------------------------------------Profile-drop-down-menu---------------------------------------------------- -->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="./assets/images/myphoto.png" alt="">
+                    <div>
+                        <h3>Amarjeet Singh</h3>
+                        <a href="index.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/images/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/images/setting.png" alt="">
+                    <p>Setting & Privacy</p>
+                    <span>></span>
+                </a> <a href="#" class="profile-menu-link">
+                    <img src="./assets/images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a> <a href="#" class="profile-menu-link">
+                    <img src="./assets/images/display.png" alt="">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="./assets/images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- -------------- navbar close ---------------  -->
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="./assets/images/cover-pic.png" alt="cover-pic" width="100%">
+                <div class="profile-container-inner">
+                    <img src="./assets/images/myphoto.png" alt="user" class="profile-pic">
+                    <h1>Amarjeet Singh</h1>
+                    <b>Web Developer </b>
+                    <p>Pathankot,Punjab  &middot; <a href="#">Contact info</a></p>
+                    <div class="mutual-connection">
+                        <img src="./assets/images/user-2.png" alt="user-2">
+                        <span>1 mutual connection: Orlando Diggs</span>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="./assets/images/connect.png" alt="connect">Connect</a>
+                        <a href="#"><img src="./assets/images/chat.png" alt="chat">Message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>The success of every websites depends on search engine optimization and digital marketing strategy.If you are on first page of all major search engines then you are ahead among your competitors on first page of all major search engines then you are ahead among your competitors. </p>
+                <a href="#" class="see-more-link">See more...</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="./assets/images/microsoft.png" alt="">
+                    <div>
+                        <h3>Lead Front-End Developer</h3>
+                        <b>Microsoft &middot; Full-time</b>
+                        <b>Feb 2021 - Present &middot; 1.5 years</b>
+                        <p>computer programming is the process of performing a particular computation, usually by designing and building an executable computer program.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="./assets/images/slack.png" alt="">
+                    <div>
+                        <h3>Full Stack Developer</h3>
+                        <b>Slack &middot; Full-time</b>
+                        <b>June 2018 - Jan 2021 &middot; 2.6 years</b>
+                        <p>computer programming is the process of performing a particular computation, usually by designing and building an executable computer program.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="./assets/images/google.png" alt="">
+                    <div>
+                        <h3>Web Developer</h3>
+                        <b>Google Inc &middot; Full-time</b>
+                        <b>Sept 2015 - May 2018 &middot; 2.5 years</b>
+                        <p>computer programming is the process of performing a particular computation, usually by designing and building an executable computer program.</p>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="experience-link">Show all Experiences <img src="./assets/images/right-arrow.png" alt=""></a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-desc-row">
+                    <img src="./assets/images/stanford.png" alt="">
+                    <div>
+                        <h3>Stanford University</h3>
+                        <b>BSEE, Electrical Engineering</b>
+                        <b>2018-2022</b>
+                    </div>   
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="./assets/images/north.png" alt="">
+                    <div>
+                        <h3>NorthWestern University</h3>
+                        <b>Computer Science</b>
+                        <b>2015-2018</b>
+                    </div>   
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="./assets/images/mit.png" alt="">
+                    <div>
+                        <h3>Hardvard University</h3>
+                        <b>Senior High School</b>
+                        <b>2005-2015</b>
+                    </div>   
+                </div>
+            </div>
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Leadership</a>
+                <a href="#" class="skills-btn">Web Design</a>
+                <a href="#" class="skills-btn">Development</a>
+                <a href="#" class="skills-btn">Communication</a>
+                <a href="#" class="skills-btn">UI/UX</a>
+                <a href="#" class="skills-btn">Planning</a>
+                <a href="#" class="skills-btn">Coding</a>
+                <a href="#" class="skills-btn">JavaScript</a>
+                <a href="#" class="skills-btn">Python</a>
+                <a href="#" class="skills-btn">Entrepreneurship</a>
+            </div>
+            <div class="profile-description">
+                <h2>Languages</h2>
+                <a href="#" class="language-btn">English</a>
+                <a href="#" class="language-btn">German</a>
+            </div>
+
+        </div>
+
+    <!-- --------------profile-sidebar---------------  -->
+
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of web design</p>
+                <div>
+                    <img src="./assets/images/user-1.png" alt="">
+                    <img src="./assets/images/mi-logo.png" alt="">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="./assets/images/user-4.png" alt="">
+                    <div>
+                        <h2>Samuel Tony</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="./assets/images/user-3.png" alt="">
+                    <div>
+                        <h2>Sam Toy</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="./assets/images/user-2.png" alt="">
+                    <div>
+                        <h2>Namuel mony</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="./assets/images/user-5.png" alt="">
+                    <div>
+                        <h2>Ronnie </h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="./assets/images/user-1.png" alt="">
+                    <div>
+                        <h2>Marsh</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="./assets/images/logo.png" alt="">
+                <p>Linkedup &#169; 2023. All right reserved</p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/Js/script.js"></script>
+</body>
+</html> 
